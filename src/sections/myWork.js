@@ -59,11 +59,11 @@ export default () => (
 const styles = {
 	servicesContainerStyle: {
       display: 'flex',
-      justifyContent: 'space-between'
+      justifyContent: 'space-between',
+      marginBottom: '5rem'
    },
    serviceStyle: {
       width: '30%',
       display: 'flex'
-      
    }
 };

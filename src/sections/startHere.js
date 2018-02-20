@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () => (
-   <div style={{ marginTop: '5rem' }}>
+   <div style={{ paddingTop: '5rem' }}>
       <h2>Hi, I'm Caitlin Baird.</h2>
       <p>
          We all want to live our best possible life.  People envision healthy relationships, satisfying work and inner peace but often experience a gap between reality and these ideals. We may hold our circumstances, loved ones or culture at large responsible for this disparity. But, I believe the solution to this gap starts with us. Making sense of our lives often begins with making sense of ourselves.

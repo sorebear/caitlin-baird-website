@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 
 const Header = () => (
 	<div style={ styles.headerStyle } >
-		<div style={ styles.contentContainerStyle }>
+		<div style={ styles.contentContainerStyle } className="container">
 			<h1 style={{ margin: 0 }}>
 				<Link to="/" style={styles.logoStyle}>
 					Caitlin Baird
@@ -11,27 +11,27 @@ const Header = () => (
 			</h1>
 			<ul style={styles.navStyle}>
 				<li style={styles.listItemStyle}>
-               <Link to="/" style={styles.navLinkStyle}>
+               <Link to="#start-here" style={styles.navLinkStyle}>
                   <h5 style={styles.navTextStyle}>Start Here</h5>
                </Link>
             </li>
 				<li style={styles.listItemStyle}>
-               <Link to="/" style={styles.navLinkStyle}>
+               <Link to="#my-work" style={styles.navLinkStyle}>
                   <h5 style={styles.navTextStyle}>My Work</h5>
                </Link>
             </li>
 				<li style={styles.listItemStyle}>
-               <Link to="/" style={styles.navLinkStyle}>
+               <Link to="#about-me" style={styles.navLinkStyle}>
                   <h5 style={styles.navTextStyle}>About Me</h5>
                </Link>
             </li>
 				<li style={styles.listItemStyle}>
-               <Link to="/" style={styles.navLinkStyle}>
+               <Link to="#references" style={styles.navLinkStyle}>
                   <h5 style={styles.navTextStyle}>References</h5>
                </Link>
             </li>
 				<li style={styles.listItemStyle}>
-               <Link to="/" style={styles.navLinkStyle}>
+               <Link to="#lets-connect" style={styles.navLinkStyle}>
                   <h5 style={styles.navTextStyle}>Let's Connect</h5>
                </Link>
             </li>
@@ -51,8 +51,6 @@ const styles = {
       width: '100%'
    },
    contentContainerStyle: {
-      margin: '0 auto',
-      maxWidth: 960,
       padding: '1.45rem 1.0875rem',
       display: 'flex',
       justifyContent: 'space-between',
