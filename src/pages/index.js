@@ -9,7 +9,7 @@ import Title from '../components/title';
 import References from '../sections/references';
 import LetsConnect from '../sections/letsConnect';
 import Footer from '../sections/footer';
-import SectionWithBackgroundImg from '../components/sectionWithBackgroundImg';
+import SectionWithBackground from '../components/sectionWithBackground';
 
 const IndexPage = () => (
    <div className="site-wrapper">
@@ -17,15 +17,23 @@ const IndexPage = () => (
       <section id="start-here" className="container">
          <StartHere />
       </section>
-      <section id="my-work" className="container">
-         <Title>My Work</Title>
+      <SectionWithBackground
+         id="my-work"
+         style={{ backgroundAttachment: 'none',
+            backgroundImage: `linear-gradient(
+            to bottom,
+            rgb(97, 4, 95),
+            rgb(50, 24, 95)`
+            }}
+      >
+         <Title style={{ color: 'white' }}>My Work</Title>
          <MyWork />
-      </section>
+      </SectionWithBackground>
       <section id="what-to-expect" className="container">
          <Title>What To Expect From Me</Title>
          <WhatToExpect />
       </section>
-      <SectionWithBackgroundImg
+      <SectionWithBackground
          id="about-me"
          style={{
             backgroundImage: `linear-gradient(
@@ -37,12 +45,12 @@ const IndexPage = () => (
       >
          <Title style={{ color: 'white' }}>About Me</Title>
          <AboutMe />
-      </SectionWithBackgroundImg>
+      </SectionWithBackground>
       <section id="references" className="container">
          <Title>Kind Words From Trustworthy People</Title>
          <References />
       </section>
-      <SectionWithBackgroundImg
+      <SectionWithBackground
          id="lets-connect"
          style={{
             backgroundImage: `linear-gradient(
@@ -54,7 +62,7 @@ const IndexPage = () => (
       >
          <Title style={{color: 'white' }}>Let's Connect</Title>
          <LetsConnect />
-      </SectionWithBackgroundImg>
+      </SectionWithBackground>
       <Footer />
    </div>
 );

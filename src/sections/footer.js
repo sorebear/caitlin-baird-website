@@ -54,6 +54,7 @@ const styles = {
       display: 'flex',
       flexDirection: 'column',
       textAlign: 'center',
+      // backgroundImage: 'linear-gradient(rgb(50, 24, 95), rgb(97, 4, 95)',
       backgroundColor: 'rgb(51, 51, 51)',
       color: 'white'
    },

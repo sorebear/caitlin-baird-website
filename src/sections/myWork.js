@@ -64,6 +64,7 @@ const styles = {
    },
    serviceStyle: {
       width: '30%',
-      display: 'flex'
+		display: 'flex',
+		color: 'white'
    }
 };
