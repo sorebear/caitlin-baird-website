@@ -19,12 +19,7 @@ const IndexPage = () => (
       </section>
       <SectionWithBackground
          id="my-work"
-         style={{ backgroundAttachment: 'none',
-            backgroundImage: `linear-gradient(
-            to bottom,
-            rgb(97, 4, 95),
-            rgb(50, 24, 95)`
-            }}
+         style={{ backgroundColor: 'rgb(179, 61, 120)'}}
       >
          <Title style={{ color: 'white' }}>My Work</Title>
          <MyWork />

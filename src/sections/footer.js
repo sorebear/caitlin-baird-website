@@ -55,7 +55,7 @@ const styles = {
       flexDirection: 'column',
       textAlign: 'center',
       // backgroundImage: 'linear-gradient(rgb(50, 24, 95), rgb(97, 4, 95)',
-      backgroundColor: 'rgb(51, 51, 51)',
+      backgroundColor: 'rgb(179, 61, 120)',
       color: 'white'
    },
    navStyle: {
@@ -71,6 +71,6 @@ const styles = {
    copyrightStyle: {
       padding: '2.5rem 0',
       fontWeight: 400,
-      color: 'grey'
+      color: 'white'
    }
 }

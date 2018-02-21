@@ -34,7 +34,7 @@ const styles = {
       fontSize: '4rem',
       textTransform: 'uppercase',
       textShadow: '0px 5px 10px rgba(0, 0, 0, .7)',
-      color: 'salmon'
+      color: 'rgb(179, 61, 128)'
    },
    subheaderStyle: {
       color: 'white'
