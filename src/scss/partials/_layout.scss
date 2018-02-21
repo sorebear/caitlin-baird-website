@@ -3,3 +3,15 @@
    padding: 0 50px;
    margin: 0 auto;
 }
+
+::placeholder {
+   color: white;
+}
+
+.no-m {
+   margin: 0 !important;
+}
+
+.no-p {
+   padding: 0 !important;
+}

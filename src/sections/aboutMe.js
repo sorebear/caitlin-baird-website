@@ -1,25 +1,87 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Modal from '../components/modal';
+import Title from '../components/title';
 
-export default () => (
-   <div style={styles.aboutMeStyle}>
-      <h5 style={styles.titleStyle}>I Am...</h5>
-      <p style={styles.textStyle}>
-      a 34yo deep thinker, deep feeler &amp; huge reader. perpetually hot. married w/o kids. more witty than funny. in love with throne of glass. an only child. always burning a candle. crazy about puppies, red wine, fall leaves &amp; my husband. obsessed with words—where they came from, how they’re used, what they mean. passionate about transformation and helping people experience the life they truly seek. re-losing the same 20 pounds I’ve lost 67 times before. and, learning to make peace with all of these things. 
-      </p>
-      <p style={styles.textStyle}>
-         Looking for a prosessional bio? Click here.
-      </p>
-   </div>
-);
+class AboutMe extends Component {
+	constructor(props) {
+      super(props);
+      this.toggleModal = this.toggleModal.bind(this);
+		this.state = {
+			showModal: false
+		};
+	}
+
+	toggleModal() {
+		this.setState({
+			showModal: !this.state.showModal
+		});
+	}
+
+	render() {
+		return (
+			<div style={styles.aboutMeStyle}>
+				<Modal showModal={this.state.showModal}>
+               <h5 onClick={this.toggleModal} style={styles.closeModalStyle} >&times;</h5>
+               <Title style={{paddingTop: 0}}>Professional Bio</Title>
+					<p>
+						A self-identified hopeful realist, Caitlin Baird inspires audiences to boldly
+						pursue the abundant life while also acknowledging how hard this pursuit can be.
+						Not one for simple answers, Caitlin addresses head-on the complexities of life.
+						She teaches her audience how to become self-aware, empowers them to take
+						responsibility, and inspires them to take action toward an unprecedented future.
+						Caitlin shares stories of her own personal transformation with warmth and candor.
+						She'll have you laughing one moment and feeling convicted the next, all
+						communicated with great empathy.
+					</p>
+
+					<p>
+						An experienced speaker, Caitlin has worked with a variety of churches, camps and
+						schools over the past 7 years. She developed an original character training A
+						Grace Experience which piloted in Orange County, CA Fall of 2012. She is currently
+						working on her first e-book and online workshop.
+					</p>
+
+					<p>
+						Caitlin and her husband, Soren, live on the East Bay of San Fransisco, where they
+						pay way too much for too small of an apartment. She loves great books, red wine,
+						dinners out with friends and the year-round smell of fall candles.
+					</p>
+				</Modal>
+				<h5 style={styles.titleStyle}>I Am...</h5>
+				<p style={styles.textStyle}>
+					a 34yo deep thinker, deep feeler &amp; huge reader. perpetually hot. married w/o
+					kids. more witty than funny. in love with throne of glass. an only child. always
+					burning a candle. crazy about puppies, red wine, fall leaves &amp; my husband.
+					obsessed with words—where they came from, how they’re used, what they mean.
+					passionate about transformation and helping people experience the life they truly
+					seek. re-losing the same 20 pounds I’ve lost 67 times before. and, learning to make
+					peace with all of these things.
+				</p>
+            <p onClick={this.toggleModal} style={{...styles.textStyle, cursor: 'pointer'}}>
+               Looking for a prosessional bio? Click here.
+            </p>
+			</div>
+		);
+	}
+}
+
+export default AboutMe;
 
 const styles = {
-   aboutMeStyle: {
-      width: '70%'
+	aboutMeStyle: {
+		width: '70%'
+	},
+	titleStyle: {
+		color: 'white'
+	},
+	textStyle: {
+		color: 'white'
    },
-   titleStyle: {
-      color: 'white'
-   },
-   textStyle: {
-      color: 'white'
+   closeModalStyle: {
+      position: 'absolute',
+      top: '10px',
+      right: '25px',
+      fontSize: '48px',
+      cursor: 'pointer'
    }
-}
+};

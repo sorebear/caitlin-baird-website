@@ -28,11 +28,12 @@ const styles = {
       display: 'flex',
       flexDirection: 'column',
       textAlign: 'center',
-      color: 'white',
-      textShadow: '0px 4px 2px rgba(0, 0, 0, .7)'
+      color: 'white'
    },
    mainTitleStyle: {
       fontSize: '4rem',
+      textTransform: 'uppercase',
+      textShadow: '0px 5px 10px rgba(0, 0, 0, .7)',
       color: 'salmon'
    },
    subheaderStyle: {
