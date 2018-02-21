@@ -1,11 +1,11 @@
 import React from 'react';
 
 export default () => (
-	<div style={styles.servicesContainerStyle}>
+	<div className="services" style={styles.servicesContainerStyle}>
 		<div style={styles.serviceStyle}>
 			<i className="" />
 			<div>
-				<h4>Speaking</h4>
+				<h4 style={styles.serviceTitleStyle}>/ Speaking /</h4>
 				<p>
 					I speak predominantly on self-awareness, inner wholeness, spiritual formation,
 					relational reconciliation, and identity.
@@ -23,7 +23,7 @@ export default () => (
       <div style={styles.serviceStyle}>
 			<i className="" />
 			<div>
-				<h4>Training</h4>
+				<h4 style={styles.serviceTitleStyle}>/ Training /</h4>
 				<p>
                My first character workshop A Grace Experience piloted in 2012 with 72 brave souls.
 				</p>
@@ -38,7 +38,7 @@ export default () => (
       <div style={styles.serviceStyle}>
 			<i className="" />
 			<div>
-				<h4>Speaking</h4>
+				<h4 style={styles.serviceTitleStyle}>/ Coaching /</h4>
 				<p>
 					I speak predominantly on self-awareness, inner wholeness, spiritual formation,
 					relational reconciliation, and identity.
@@ -61,7 +61,12 @@ const styles = {
       display: 'flex',
       justifyContent: 'space-between',
       marginBottom: '5rem'
-   },
+	},
+	serviceTitleStyle: {
+		textAlign: 'center',
+		textTransform: 'uppercase',
+		marginBottom: '2.5rem'
+	},
    serviceStyle: {
       width: '30%',
 		display: 'flex',

@@ -32,10 +32,10 @@ const styles = {
    },
    iconStyle: {
       fontSize: '3rem',
-      backgroundImage: 'linear-gradient(to bottom, rgb(97, 4, 95), rgb(50, 24, 95))',
+      // backgroundImage: 'linear-gradient(to bottom, rgb(97, 4, 95), rgb(50, 24, 95))',
       paddingBottom: '2px',
       backgroundSize: `cover`,
       WebkitBackgroundClip: 'text',
-      color: 'transparent'
+      color: 'rgb(179, 61, 120)'
    }
 }

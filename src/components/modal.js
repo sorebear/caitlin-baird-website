@@ -8,7 +8,7 @@ class Modal extends Component {
       const visibility = this.props.showModal ? 'block' : 'none';
       return (
          <div style={{...styles.overlayStyle, display: visibility}}>
-            <div style={styles.modalStyle}>
+            <div className="modal" style={styles.modalStyle}>
                { this.props.children }
             </div>
          </div>
@@ -36,6 +36,8 @@ const styles = {
       backgroundColor: 'white',
       padding: '6.45rem',
       position: 'absolute',
-      width: '95%'
+      width: '95%',
+      maxHeight: '95%',
+      overflow: 'scroll'
    }
 }

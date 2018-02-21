@@ -30,7 +30,7 @@ const IndexPage = () => (
       </section>
       <SectionWithBackground
          id="about-me"
-         style={{
+         style={{ backgroundPosition: 'right',
             backgroundImage: `linear-gradient(
          to bottom, 
          rgba(25, 25, 25, .8), 

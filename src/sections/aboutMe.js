@@ -22,7 +22,7 @@ class AboutMe extends Component {
 			<div style={styles.aboutMeStyle}>
 				<Modal showModal={this.state.showModal}>
                <h5 onClick={this.toggleModal} style={styles.closeModalStyle} >&times;</h5>
-               <Title style={{paddingTop: 0}}>Professional Bio</Title>
+               <Title style={{paddingTop: 0, paddingBottom: '2.5rem'}}>Professional Bio</Title>
 					<p>
 						A self-identified hopeful realist, Caitlin Baird inspires audiences to boldly
 						pursue the abundant life while also acknowledging how hard this pursuit can be.
@@ -57,7 +57,7 @@ class AboutMe extends Component {
 					seek. re-losing the same 20 pounds I’ve lost 67 times before. and, learning to make
 					peace with all of these things.
 				</p>
-            <p onClick={this.toggleModal} style={{...styles.textStyle, cursor: 'pointer'}}>
+            <p onClick={this.toggleModal} style={{...styles.textStyle, color: 'rgb(179, 61, 120)', cursor: 'pointer'}}>
                Looking for a prosessional bio? Click here.
             </p>
 			</div>

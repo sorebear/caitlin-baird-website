@@ -11,6 +11,6 @@ const styles = {
       padding: '5rem 0',
       margin: 0,
       textTransform: 'uppercase',
-      color: 'rgb(179, 61, 120)'
+      // color: 'rgb(179, 61, 120)'
    }
 }
