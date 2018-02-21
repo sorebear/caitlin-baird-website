@@ -8,7 +8,7 @@ class Modal extends Component {
       const visibility = this.props.showModal ? 'block' : 'none';
       return (
          <div style={{...styles.overlayStyle, display: visibility}}>
-            <div className="modal" style={styles.modalStyle}>
+            <div className={this.props.className} style={styles.modalStyle}>
                { this.props.children }
             </div>
          </div>

@@ -1,8 +1,15 @@
 @media only screen and (max-width: 767px) {
-   #about-me {
+   .about-me {
+
+      width: 100% !important;
 
       .modal {
          padding: 2.5rem !important;
+
+         &__close {
+            font-size: 24px !important;
+            right: 16px !important;
+         }
       }
    }
 }

@@ -1,7 +1,10 @@
 @media only screen and (max-width: 767px) {
-   .references {
+   .lets-connect {
+      &__input-container {
+         flex-direction: column !important;
+      }
 
-      &__blockquote {
+      &__input {
          margin-left: 0 !important;
          margin-right: 0 !important;
       }

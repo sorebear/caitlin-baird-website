@@ -3,9 +3,9 @@ import React from 'react';
 const date = new Date();
 
 export default () => (
-   <div style={styles.footerStyle}>
+   <div className="footer" style={styles.footerStyle}>
       <div className="container" style={{ width: '100%' }}>
-         <ul style={styles.navStyle}>
+         <ul className="footer__nav" style={styles.navStyle}>
             <li>
                <a style={styles.anchorStyle}>
                   <h5 style={styles.linkTextStyle}>Start Here</h5>
@@ -63,7 +63,8 @@ const styles = {
       flexDirection: 'row',
       justifyContent: 'space-between',
       listStyle: 'none',
-      marginTop: '1.45rem'
+      marginTop: '1.45rem',
+      marginLeft: 0
    },
    linkTextStyle: {
       fontWeight: 400

@@ -2,7 +2,7 @@ import React from 'react';
 import ExpectationCard from '../components/expectationCard';
 
 export default () => (
-   <div style={styles.whatToExpectStyles}>
+   <div className="what-to-expect" style={styles.whatToExpectStyles}>
       <ExpectationCard icon="icon-basic-message-multiple" title="Communication">
          <p className="no-m">Quick and professional replies to phone calls and email messages</p>
       </ExpectationCard>
@@ -15,7 +15,7 @@ export default () => (
       <ExpectationCard icon="icon-basic-lightbulb" title="Professionalism">
          <p className="no-m">A professionally prepared, compelling presentation designed to achieve the goals you desire for your audience</p>
       </ExpectationCard>
-      <ExpectationCard icon="icon-basic-question" title="Follow-Up">
+      <ExpectationCard icon="icon-basic-question" title="Follow-Up" style={{ justifySelf: 'flex-start'}}>
          <p className="no-m">A brief, post event communication to ensure I met your expectations and receive feedback</p>
       </ExpectationCard>
    </div>
@@ -25,5 +25,6 @@ const styles = {
    whatToExpectStyles: {
       display: 'flex',
       flexFlow: 'wrap',
+      justifyContent: 'space-between'
    }
 }

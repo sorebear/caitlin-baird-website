@@ -19,11 +19,11 @@ class AboutMe extends Component {
 
 	render() {
 		return (
-			<div style={styles.aboutMeStyle}>
-				<Modal showModal={this.state.showModal}>
-               <h5 onClick={this.toggleModal} style={styles.closeModalStyle} >&times;</h5>
-               <Title style={{paddingTop: 0, paddingBottom: '2.5rem'}}>Professional Bio</Title>
-					<p>
+			<div className="about-me" style={styles.aboutMeStyle}>
+				<Modal showModal={this.state.showModal} className="modal">
+               <h5 className="modal__close" onClick={this.toggleModal} style={styles.closeModalStyle}>&times;</h5>
+               <Title className="modal__title" style={{paddingTop: 0, paddingBottom: '2.5rem'}}>Professional Bio</Title>
+					<p className="modal__content">
 						A self-identified hopeful realist, Caitlin Baird inspires audiences to boldly
 						pursue the abundant life while also acknowledging how hard this pursuit can be.
 						Not one for simple answers, Caitlin addresses head-on the complexities of life.
@@ -34,21 +34,21 @@ class AboutMe extends Component {
 						communicated with great empathy.
 					</p>
 
-					<p>
+					<p className="modal__content">
 						An experienced speaker, Caitlin has worked with a variety of churches, camps and
 						schools over the past 7 years. She developed an original character training A
 						Grace Experience which piloted in Orange County, CA Fall of 2012. She is currently
 						working on her first e-book and online workshop.
 					</p>
 
-					<p>
+					<p className="modal__content">
 						Caitlin and her husband, Soren, live on the East Bay of San Fransisco, where they
 						pay way too much for too small of an apartment. She loves great books, red wine,
 						dinners out with friends and the year-round smell of fall candles.
 					</p>
 				</Modal>
-				<h5 style={styles.titleStyle}>I Am...</h5>
-				<p style={styles.textStyle}>
+				<h5 className="about-me__title" style={styles.titleStyle}>I Am...</h5>
+				<p className="about-me__content" style={styles.textStyle}>
 					a 34yo deep thinker, deep feeler &amp; huge reader. perpetually hot. married w/o
 					kids. more witty than funny. in love with throne of glass. an only child. always
 					burning a candle. crazy about puppies, red wine, fall leaves &amp; my husband.

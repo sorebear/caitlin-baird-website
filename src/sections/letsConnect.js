@@ -1,34 +1,42 @@
 import React from 'react';
 
 export default () => (
-	<div className="container">
+	<div className="lets-connect">
 		<form
 			target="_blank"
 			method="POST"
 			style={styles.formStyle}
+			className="lets-connect__form"
 			//action='https://formspree.io/sorenbaird@protonmail.com'
 		>
-			<div style={styles.inputContainerStyle}>
+			<div className="lets-connect__input-container" style={styles.inputContainerStyle}>
 				<input
 					name="name"
 					type="text"
 					placeholder="Name*"
+					className="lets-connect__input"
 					style={{ ...styles.inputStyle, marginRight: '10px' }}
 				/>
 				<input
 					name="_repolyto"
 					type="email"
 					placeholder="Email*"
+					className="lets-connect__input"
 					style={{ ...styles.inputStyle, marginLeft: '10px' }}
 				/>
 			</div>
          <textarea 
             name="body" 
             rows="8" 
-            placeholder="Message*" 
+				placeholder="Message*"
+				className="lets-connect__input" 
             style={styles.inputStyle} 
          />
-			<button type="submit" value="Send" style={styles.buttonStyle}>
+			<button 
+				type="submit" 
+				value="Send" 
+				className="lets-connect__submit-button"
+				style={styles.buttonStyle}>
 				<h5 style={styles.sendStyle}>Send</h5>
 			</button>
 		</form>

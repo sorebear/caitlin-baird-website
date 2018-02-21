@@ -8,6 +8,6 @@ export default () => (
       <p>
          I have walked—and continue to walk—this path for almost a decade. Through self-reflection, spiritual direction, counseling, stable relationships and healthy doses of red wine I have experienced growth and healing where all hope seemed lost. You won't find simple answers here, but what you will find—depth, struggle, meaning, community —will ease the side effects of the chaos and help you to craft a life worth living. You can have the life you want.
       </p>
-      <h5>You can be the person you want to be</h5>
+      <h5 style={{ textAlign: 'center'}}>You can be the person you want to be</h5>
    </div>
 )

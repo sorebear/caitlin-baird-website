@@ -16,8 +16,8 @@ class References extends Component {
 
 	render() {
 		return (
-			<div style={styles.referencesStyle}>
-				<blockquote>
+			<div className="references" style={styles.referencesStyle}>
+				<blockquote className="references__blockquote">
 					<p style={styles.quoteStyle}>
 						<img
 							style={styles.quoteImgStyle}
@@ -115,11 +115,13 @@ const styles = {
 		textAlign: 'center'
 	},
 	referenceAuthorContainer: {
-		
+		display: 'flex',
+		flexFlow: 'wrap',
+		justifyContent: 'center'
 	},
 	authorImgStyle: {
-      height: '120px',
-      padding: '20px',
+		margin: '10px',
+		width: '80px',
       cursor: 'pointer'
 	}
 };

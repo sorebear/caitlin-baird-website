@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default ({ children, icon, title, style }) => (
-   <div style={{...styles.cardStyle, ...style}}>
+   <div className="what-to-expect__card" style={{...styles.cardStyle, ...style}}>
       <div style={styles.headerStyle}>
          <i className={icon} style={styles.iconStyle}></i>
          <h5>{ title }</h5>

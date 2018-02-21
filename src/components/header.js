@@ -2,39 +2,39 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 const Header = () => (
-	<div style={ styles.headerStyle } >
+	<div className="header" style={ styles.headerStyle } >
 		<div style={ styles.contentContainerStyle } className="container">
 			<h1 style={{ margin: 0 }}>
 				<Link to="/" style={styles.logoStyle}>
 					Caitlin Baird
 				</Link>
 			</h1>
-			<ul style={styles.navStyle}>
+			<ul className="header__nav" style={styles.navStyle}>
 				<li style={styles.listItemStyle}>
-               <Link to="#start-here" style={styles.navLinkStyle}>
-                  <h5 style={styles.navTextStyle}>Start Here</h5>
-               </Link>
-            </li>
-				<li style={styles.listItemStyle}>
-               <Link to="#my-work" style={styles.navLinkStyle}>
-                  <h5 style={styles.navTextStyle}>My Work</h5>
-               </Link>
-            </li>
-				<li style={styles.listItemStyle}>
-               <Link to="#about-me" style={styles.navLinkStyle}>
-                  <h5 style={styles.navTextStyle}>About Me</h5>
-               </Link>
-            </li>
-				<li style={styles.listItemStyle}>
-               <Link to="#references" style={styles.navLinkStyle}>
-                  <h5 style={styles.navTextStyle}>References</h5>
-               </Link>
-            </li>
-				<li style={styles.listItemStyle}>
-               <Link to="#lets-connect" style={styles.navLinkStyle}>
-                  <h5 style={styles.navTextStyle}>Let's Connect</h5>
-               </Link>
-            </li>
+                    <Link to="#start-here" style={styles.navLinkStyle}>
+                        <h5 style={styles.navTextStyle}>Start Here</h5>
+                    </Link>
+                    </li>
+                        <li style={styles.listItemStyle}>
+                    <Link to="#my-work" style={styles.navLinkStyle}>
+                        <h5 style={styles.navTextStyle}>My Work</h5>
+                    </Link>
+                    </li>
+                        <li style={styles.listItemStyle}>
+                    <Link to="#about-me" style={styles.navLinkStyle}>
+                        <h5 style={styles.navTextStyle}>About Me</h5>
+                    </Link>
+                    </li>
+                        <li style={styles.listItemStyle}>
+                    <Link to="#references" style={styles.navLinkStyle}>
+                        <h5 style={styles.navTextStyle}>References</h5>
+                    </Link>
+                    </li>
+                        <li style={styles.listItemStyle}>
+                    <Link to="#lets-connect" style={styles.navLinkStyle}>
+                        <h5 style={styles.navTextStyle}>Let's Connect</h5>
+                    </Link>
+                </li>
 			</ul>
 		</div>
 	</div>
