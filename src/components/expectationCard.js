@@ -12,23 +12,19 @@ export default ({ children, icon, title, style }) => (
 
 const styles = {
    cardStyle : {
-      width: '350px',
-      padding: '2rem',
-      marginBottom: '2rem',
-      marginLeft: '1rem',
-      marginRight: '1rem',
+      width: '320px',
+      marginBottom: '5rem',
       display: 'flex',
       flexDirection: 'column',
       textAlign: 'left',
       wordWrap: 'break-work',
       wordBreak: 'normal'
-      // border: '2px solid black'
    },
    headerStyle: {
       display: 'flex',
       flexDirection: 'row-reverse',
       justifyContent: 'space-between',
-      marginBottom: '2rem'
+      marginBottom: '1.45rem'
    },
    iconStyle: {
       fontSize: '3rem',

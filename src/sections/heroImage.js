@@ -4,11 +4,11 @@ export default ({ title, subtitle, image }) => {
 	return (
 		<div
 			id="home"
-			style={{ ...styles.heroImageStyle, backgroundImage: `url('../static/hero-image.jpg')` }}
+			style={{...styles.heroImageStyle, backgroundImage: `linear-gradient(rgba(25, 25, 25, .8), rgba(25, 25, 25, 0.6)) ,url('${image}')` }}
 		>
 			<h1 style={styles.titleStyle}>
 				<span style={styles.mainTitleStyle}>Caitlin Baird</span>
-				<span>Speaker, Trainer, Coach</span>
+				<span>Speaker, Trainer, Consultant</span>
 			</h1>
 			<p style={styles.subheaderStyle}>
 				<em>

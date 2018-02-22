@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../components/button';
 
 export default () => (
 	<div className="lets-connect">
@@ -32,13 +33,13 @@ export default () => (
 				className="lets-connect__input" 
             style={styles.inputStyle} 
          />
-			<button 
+			<Button
 				type="submit" 
 				value="Send" 
 				className="lets-connect__submit-button"
-				style={styles.buttonStyle}>
-				<h5 style={styles.sendStyle}>Send</h5>
-			</button>
+				style={{ width: '160px' }}>
+					Send
+			</Button>
 		</form>
 	</div>
 );
@@ -62,14 +63,6 @@ const styles = {
       backgroundColor: 'transparent',
       resize: 'none',
       marginBottom: '20px'
-   },
-   buttonStyle: {
-      padding: '16px 20px',
-      width: '142px',
-      color: 'white',
-      border: '2px solid white',
-      backgroundColor: 'transparent',
-      cursor: 'pointer'
    },
    sendStyle: {
       margin: 0,

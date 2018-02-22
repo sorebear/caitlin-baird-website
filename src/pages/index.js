@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import HeroImage from '../sections/heroImage';
 import StartHere from '../sections/startHere';
+import WorkIntro from '../sections/workIntro';
 import MyWork from '../sections/myWork';
 import WhatToExpect from '../sections/whatToExpect';
 import AboutMe from '../sections/aboutMe';
@@ -11,12 +12,30 @@ import LetsConnect from '../sections/letsConnect';
 import Footer from '../sections/footer';
 import SectionWithBackground from '../components/sectionWithBackground';
 
+// class IndexPage extends Component {
+//    constructor(props) {
+//       super(props);
+//       this.state 
+//    }
+// }
+
 const IndexPage = () => (
    <div className="site-wrapper">
-      <HeroImage />
+      <HeroImage image="../static/hero-image.jpg" />
       <section id="start-here" className="container">
          <StartHere />
       </section>
+      <SectionWithBackground
+         id="my-work-intro"
+         style={{ backgroundImage: `linear-gradient(
+            to bottom, 
+            rgba(25, 25, 25, .8), 
+            rgba(25, 25, 25, .6)), 
+            url('static/speaking.png')`
+         }}
+      >
+         <WorkIntro />
+      </SectionWithBackground>
       <SectionWithBackground
          id="my-work"
          style={{ backgroundColor: 'rgb(179, 61, 120)'}}

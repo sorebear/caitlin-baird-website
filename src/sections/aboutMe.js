@@ -69,7 +69,8 @@ export default AboutMe;
 
 const styles = {
 	aboutMeStyle: {
-		width: '70%'
+		width: '70%',
+		paddingBottom: '5rem'
 	},
 	titleStyle: {
 		color: 'white'

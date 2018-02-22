@@ -10,27 +10,17 @@ const Header = () => (
 				</Link>
 			</h1>
 			<ul className="header__nav" style={styles.navStyle}>
-				<li style={styles.listItemStyle}>
-                    <Link to="#start-here" style={styles.navLinkStyle}>
-                        <h5 style={styles.navTextStyle}>Start Here</h5>
-                    </Link>
-                    </li>
-                        <li style={styles.listItemStyle}>
+                <li style={styles.listItemStyle}>
                     <Link to="#my-work" style={styles.navLinkStyle}>
                         <h5 style={styles.navTextStyle}>My Work</h5>
                     </Link>
-                    </li>
-                        <li style={styles.listItemStyle}>
+                </li>
+                <li style={styles.listItemStyle}>
                     <Link to="#about-me" style={styles.navLinkStyle}>
                         <h5 style={styles.navTextStyle}>About Me</h5>
                     </Link>
-                    </li>
-                        <li style={styles.listItemStyle}>
-                    <Link to="#references" style={styles.navLinkStyle}>
-                        <h5 style={styles.navTextStyle}>References</h5>
-                    </Link>
-                    </li>
-                        <li style={styles.listItemStyle}>
+                </li>
+                <li style={styles.listItemStyle}>
                     <Link to="#lets-connect" style={styles.navLinkStyle}>
                         <h5 style={styles.navTextStyle}>Let's Connect</h5>
                     </Link>

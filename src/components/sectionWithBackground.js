@@ -12,7 +12,6 @@ const styles = {
    sectionStyle: {
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      backgroundAttachment: 'fixed',
-      paddingBottom: '5rem'
+      backgroundAttachment: 'fixed'
    }
 };
