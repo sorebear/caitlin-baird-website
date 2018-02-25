@@ -18,7 +18,6 @@ class Header extends Component {
    }
 
    updateHeader() {
-      console.log(window.pageYOffset);
       this.setState({
          scrollState: window.pageYOffset !== 0 ? 'scrolled' : 'unscrolled'
       });
@@ -62,7 +61,8 @@ const styles = {
       position: 'fixed',
       top: 0,
       left: 0,
-      width: '100%'
+      width: '100%',
+      zIndex: '50'
    },
    contentContainerStyle: {
       padding: '1.45rem 50px',
