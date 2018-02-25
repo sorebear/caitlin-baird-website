@@ -32,6 +32,6 @@ const styles = {
       paddingBottom: '2px',
       backgroundSize: `cover`,
       WebkitBackgroundClip: 'text',
-      color: 'rgb(179, 61, 120)'
+      color: 'rgb(248,88,73)'
    }
 }

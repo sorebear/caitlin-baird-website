@@ -57,7 +57,7 @@ class AboutMe extends Component {
 					seek. re-losing the same 20 pounds I’ve lost 67 times before. and, learning to make
 					peace with all of these things.
 				</p>
-            <p onClick={this.toggleModal} style={{...styles.textStyle, color: 'rgb(179, 61, 120)', cursor: 'pointer'}}>
+            <p onClick={this.toggleModal} style={{...styles.textStyle, color: 'rgb(248,88,73)', cursor: 'pointer'}}>
                Looking for a prosessional bio? Click here.
             </p>
 			</div>

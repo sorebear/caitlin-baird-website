@@ -8,7 +8,6 @@ export default ({ title, subtitle, image }) => {
 		>
 			<h1 style={styles.titleStyle}>
 				<span style={styles.mainTitleStyle}>Caitlin Baird</span>
-				<span>Speaker, Trainer, Consultant</span>
 			</h1>
 			<p style={styles.subheaderStyle}>
 				<em>
@@ -43,7 +42,7 @@ const styles = {
 		fontSize: '4rem',
 		textTransform: 'uppercase',
 		textShadow: '0px 5px 10px rgba(0, 0, 0, .7)',
-		color: 'rgb(179, 61, 128)'
+		color: 'rgb(248,88,73)'
 	},
 	subheaderStyle: {
 		padding: '0 1rem',

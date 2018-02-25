@@ -55,7 +55,7 @@ const styles = {
       flexDirection: 'column',
       textAlign: 'center',
       // backgroundImage: 'linear-gradient(rgb(50, 24, 95), rgb(97, 4, 95)',
-      backgroundColor: 'rgb(179, 61, 120)',
+      backgroundColor: 'rgb(248,88,73)',
       color: 'white'
    },
    navStyle: {

@@ -121,7 +121,7 @@ const styles = {
 	},
 	authorImgStyle: {
 		margin: '10px',
-		width: '80px',
+		height: '80px',
       cursor: 'pointer'
 	}
 };

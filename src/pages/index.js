@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
+
 import HeroImage from '../sections/heroImage';
 import StartHere from '../sections/startHere';
 import WorkIntro from '../sections/workIntro';
@@ -12,16 +13,14 @@ import LetsConnect from '../sections/letsConnect';
 import Footer from '../sections/footer';
 import SectionWithBackground from '../components/sectionWithBackground';
 
-// class IndexPage extends Component {
-//    constructor(props) {
-//       super(props);
-//       this.state 
-//    }
-// }
+import aboutMeImg from '../images/about-me.jpg';
+import speakingImg from '../images/speaking.png';
+import heroImg from '../images/hero-image.jpg';
+import letsConnectImg from '../images/lets-connect.jpg';
 
 const IndexPage = () => (
    <div className="site-wrapper">
-      <HeroImage image="../static/hero-image.jpg" />
+      <HeroImage image={heroImg} />
       <section id="start-here" className="container">
          <StartHere />
       </section>
@@ -31,14 +30,14 @@ const IndexPage = () => (
             to bottom, 
             rgba(25, 25, 25, .8), 
             rgba(25, 25, 25, .6)), 
-            url('static/speaking.png')`
+            url(${speakingImg})`
          }}
       >
          <WorkIntro />
       </SectionWithBackground>
       <SectionWithBackground
          id="my-work"
-         style={{ backgroundColor: 'rgb(179, 61, 120)'}}
+         style={{ backgroundColor: 'rgb(248,88,73)'}}
       >
          <Title style={{ color: 'white' }}>My Work</Title>
          <MyWork />
@@ -54,7 +53,7 @@ const IndexPage = () => (
          to bottom, 
          rgba(25, 25, 25, .8), 
          rgba(25, 25, 25, .6)), 
-         url('static/about-me.jpg')`
+         url(${aboutMeImg})`
          }}
       >
          <Title style={{ color: 'white' }}>About Me</Title>
@@ -71,7 +70,7 @@ const IndexPage = () => (
          to bottom, 
          rgba(25, 25, 25, .8), 
          rgba(25, 25, 25, .6)), 
-         url('static/lets-connect.jpg')`
+         url(${letsConnectImg})`
          }}
       >
          <Title style={{color: 'white' }}>Let's Connect</Title>

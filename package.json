@@ -10,6 +10,7 @@
     "gatsby-plugin-sass": "^1.0.17",
     "gatsby-plugin-typography": "^1.7.14",
     "react-helmet": "^5.2.0",
+    "smoothscroll": "^0.4.0",
     "typography-theme-lincoln": "^0.15.11",
     "typography-theme-wordpress-2015": "^0.15.10"
   },
