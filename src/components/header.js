@@ -13,7 +13,7 @@ class Header extends Component {
       }
    }
 
-   componentWillMount() {
+   componentDidMount() {
       document.addEventListener('scroll', this.updateHeader);
    }
 
