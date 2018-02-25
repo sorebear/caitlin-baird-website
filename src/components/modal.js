@@ -38,6 +38,6 @@ const styles = {
       position: 'absolute',
       width: '95%',
       maxHeight: '95%',
-      overflow: 'scroll'
+      overflowY: 'scroll'
    }
 }
