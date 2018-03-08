@@ -10,6 +10,22 @@ module.exports = {
          options: {
             pathToConfigModule: `src/utils/typography.js`
          }
+      },
+      {
+         resolve: `gatsby-plugin-create-client-paths`,
+         options: { 
+            prefixes: [`/*`]
+         }
+      },
+      {
+         resolve: `gatsby-plugin-netlify`,
+         options: {
+            headers: {
+               "/*" : [
+                  "Basic-Auth: testing:testing demo:demo",
+               ]
+            }
+         }
       }
    ]
 };
