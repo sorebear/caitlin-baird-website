@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default ({ children, style }) => (
-   <h2 style={{...styles.titleStyle, ...style}}>
+export default ({ children, style, className }) => (
+   <h2 className={className} style={{...styles.titleStyle, ...style}}>
       // { children }
    </h2>
 );

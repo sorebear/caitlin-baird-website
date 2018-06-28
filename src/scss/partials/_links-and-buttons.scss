@@ -1,0 +1,43 @@
+.link-on-color {
+	transition: all 0.3s;
+	cursor: pointer;
+	color: $link-on-color;
+
+	&:hover {
+		color: $link-on-color-hover !important;
+	}
+
+	&:active {
+		color: darken($link-on-color-hover, 15%) !important;
+	}
+}
+
+.link-on-white {
+	transition: all 0.3s;
+	cursor: pointer;
+	color: $link-on-white;
+
+	&:hover {
+		color: $link-on-white-hover !important;
+	}
+
+	&:active {
+		color: darken($link-on-white-hover, 15%) !important;
+	}
+}
+
+.button-on-color {
+  transition: all 0.3s;
+  background-color: transparent !important;
+
+	&:hover {
+    color: $primary-color !important;
+    background-color: white !important;
+	}
+
+	&:active {
+    background-color: darken(white, 15%) !important;
+    border-color: darken(white, 15%) !important;
+		// color: white !important;
+	}
+}

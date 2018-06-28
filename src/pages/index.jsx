@@ -10,8 +10,11 @@ import AboutMe from '../sections/aboutMe';
 import Title from '../components/title';
 import References from '../sections/references';
 import LetsConnect from '../sections/letsConnect';
+import Header from '../components/header';
 import Footer from '../sections/footer';
 import SectionWithBackground from '../components/sectionWithBackground';
+
+import { mainBgGradient } from '../utils/variables';
 
 import aboutMeImg from '../images/about-me.jpg';
 import speakingImg from '../images/speaking.png';
@@ -19,65 +22,53 @@ import heroImg from '../images/hero-image.jpg';
 import letsConnectImg from '../images/lets-connect.jpg';
 
 const IndexPage = () => (
-   <div className="site-wrapper">
-      <HeroImage image={heroImg} />
-      <section id="start-here" className="container">
-         <StartHere />
-      </section>
-      <SectionWithBackground
-         id="my-work-intro"
-         style={{ backgroundImage: `linear-gradient(
-            to bottom, 
-            rgba(25, 25, 25, .8), 
-            rgba(25, 25, 25, .6)), 
-            url(${speakingImg})`
-         }}
-      >
-         <WorkIntro />
-      </SectionWithBackground>
-      <SectionWithBackground
-         id="my-work"
-         style={{ backgroundColor: 'rgb(248,88,73)'}}
-      >
-         <Title style={{ color: 'white' }}>My Work</Title>
-         <MyWork />
-      </SectionWithBackground>
-      <section id="what-to-expect" className="container">
-         <Title>What To Expect From Me</Title>
-         <WhatToExpect />
-      </section>
-      <SectionWithBackground
-         id="about-me"
-         style={{ backgroundPosition: 'right',
-            backgroundImage: `linear-gradient(
-         to bottom, 
-         rgba(25, 25, 25, .8), 
-         rgba(25, 25, 25, .6)), 
-         url(${aboutMeImg})`
-         }}
-      >
-         <Title style={{ color: 'white' }}>About Me</Title>
-         <AboutMe />
-      </SectionWithBackground>
-      <section id="references" className="container">
-         <Title>Kind Words From Trustworthy People</Title>
-         <References />
-      </section>
-      <SectionWithBackground
-         id="lets-connect"
-         style={{
-            backgroundImage: `linear-gradient(
-         to bottom, 
-         rgba(25, 25, 25, .8), 
-         rgba(25, 25, 25, .6)), 
-         url(${letsConnectImg})`
-         }}
-      >
-         <Title style={{color: 'white' }}>Let's Connect</Title>
-         <LetsConnect />
-      </SectionWithBackground>
-      <Footer />
-   </div>
+	<div className="site-wrapper">
+		<Header />
+		<HeroImage image={heroImg} />
+		<section id="start-here" className="container">
+			<StartHere />
+		</section>
+		<SectionWithBackground
+			id="my-work-intro"
+			style={{
+				backgroundImage: `${mainBgGradient}, url(${speakingImg})`
+			}}
+		>
+			<WorkIntro />
+		</SectionWithBackground>
+		<SectionWithBackground id="my-work">
+			<Title className="title-on-color">My Work</Title>
+			<MyWork />
+		</SectionWithBackground>
+		<section id="what-to-expect" className="container">
+			<Title className="title-on-white">What To Expect From Me</Title>
+			<WhatToExpect />
+		</section>
+		<SectionWithBackground
+			id="about-me"
+			style={{
+				backgroundPosition: 'right',
+				backgroundImage: `${mainBgGradient}, url(${aboutMeImg})`
+			}}
+		>
+			<Title className="title-on-color" style={{ padding: '7.5rem 0 5rem 0' }}>About Me</Title>
+			<AboutMe />
+		</SectionWithBackground>
+		<section id="references" className="container">
+			<Title className="title-on-white">Kind Words From Trustworthy People</Title>
+			<References />
+		</section>
+		<SectionWithBackground
+			id="lets-connect"
+			style={{
+				backgroundImage: `${mainBgGradient}, url(${letsConnectImg})`
+			}}
+		>
+			<Title className="title-on-color">Let's Connect</Title>
+			<LetsConnect />
+		</SectionWithBackground>
+		<Footer />
+	</div>
 );
 
 export default IndexPage;

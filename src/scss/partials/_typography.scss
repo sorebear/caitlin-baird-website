@@ -1,0 +1,18 @@
+h2, h5, p {
+	color: inherit;
+}
+
+blockquote {
+	border-color: $secondary-color;
+}
+
+.primary-color { color: $primary-color !important; }
+.bg-primary-color { background-color: $primary-color !important; }
+
+.title-on-white { color: $title-on-white; }
+.subtitle-on-white { color: $subtitle-on-white; }
+.text-on-white { color: $text-on-white; }
+
+.title-on-color { color: $title-on-color; }
+.subtitle-on-color { color: $subtitle-on-color; }
+.text-on-color { color: $text-on-color; }

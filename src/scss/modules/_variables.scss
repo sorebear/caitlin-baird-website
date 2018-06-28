@@ -1,6 +1,38 @@
 // Colors
-
 $salmon: #f85849;
+$pink: #dc4dac;
+$gold: goldenrod;
 
+// Parisian
+// $midnight: #353E5B;
+// $lilac: #98889D;
+// $grey: #CCD2DE;
+// $rose: #BEA2A1;
+// $beige: #EDE0CF;
 
-$primary-color: $salmon;
+// Paraisian 2
+$slate: #5B5B59;
+// $white: #DBDAD7;
+$white: white;
+$beige: #DAC37E;
+$gold: #DBAB37;
+$black: #0E0E0E;
+
+$primary-color: $slate;
+$secondary-color: $salmon;
+$tertiary-color: $beige;
+
+$title-on-white: $secondary-color;
+$subtitle-on-white: $secondary-color;
+$text-on-white: $black;
+$link-on-white: $secondary-color;
+$link-on-white-hover: $primary-color;
+
+$title-on-color: $secondary-color;
+$subtitle-on-color: $white;
+$text-on-color: $white;
+$link-on-color: $white;
+$link-on-color-hover: $secondary-color;
+
+// Variables
+$desktop-breakpoint: 720px;

@@ -1,16 +1,14 @@
 .references {
-
-   &__reference-image:hover {
-      opacity: .8;
-   }
+	&__reference-image:hover {
+		opacity: 0.8;
+	}
 }
 
 @media only screen and (max-width: 767px) {
-   .references {
-
-      &__blockquote {
-         margin-left: 0 !important;
-         margin-right: 0 !important;
-      }
-   }
+	.references {
+		&__blockquote {
+			margin-left: 0 !important;
+			margin-right: 0 !important;
+		}
+	}
 }

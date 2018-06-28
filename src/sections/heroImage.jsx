@@ -1,20 +1,22 @@
 import React from 'react';
+import Logo from '../components/logo';
+import { mainBgGradient } from '../utils/variables';
 
 export default ({ title, subtitle, image }) => {
 	return (
 		<div
 			id="home"
-			style={{...styles.heroImageStyle, backgroundImage: `linear-gradient(rgba(25, 25, 25, .8), rgba(25, 25, 25, 0.6)) ,url('${image}')` }}
+			style={{...styles.heroImageStyle, backgroundImage: `${mainBgGradient}, url('${image}')` }}
 		>
 			<h1 style={styles.titleStyle}>
-				<span style={styles.mainTitleStyle}>Caitlin Baird</span>
+				<span className="title-on-color" style={styles.mainTitleStyle}>Caitlin Baird</span>
+				<span className="subtitle-on-color" style={styles.subheaderStyle}>
+					<em>
+						Helping you re-connect with yourself, engage with others and craft a life worth
+						living
+					</em>
+				</span>
 			</h1>
-			<p style={styles.subheaderStyle}>
-				<em>
-					Helping you re-connect with yourself, engage with others and craft a life worth
-					living
-				</em>
-			</p>
 		</div>
 	);
 };
@@ -35,18 +37,16 @@ const styles = {
 		display: 'flex',
 		flexDirection: 'column',
 		textAlign: 'center',
-      color: 'white',
       padding: '0 1rem',
 	},
 	mainTitleStyle: {
 		fontSize: '4rem',
 		textTransform: 'uppercase',
-		textShadow: '0px 5px 10px rgba(0, 0, 0, .7)',
-		color: 'rgb(248,88,73)'
+		textShadow: '0px 5px 10px rgba(0, 0, 0, .7)'
 	},
 	subheaderStyle: {
 		padding: '0 1rem',
-      color: 'white',
-      textAlign: 'center'
+		fontSize: '1.45rem',
+    textAlign: 'center'
 	}
 };

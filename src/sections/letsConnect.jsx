@@ -36,7 +36,7 @@ export default () => (
 			<Button
 				type="submit" 
 				value="Send" 
-				className="lets-connect__submit-button"
+				className="button-on-color"
 				style={{ width: '160px' }}>
 					Send
 			</Button>
