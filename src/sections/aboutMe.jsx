@@ -76,7 +76,7 @@ export default AboutMe;
 const styles = {
 	aboutMeStyle: {
 		width: '70%',
-		paddingBottom: '7.5rem'
+		paddingBottom: '10rem'
 	},
 	closeModalStyle: {
 		position: 'absolute',

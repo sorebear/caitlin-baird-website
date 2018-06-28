@@ -19,7 +19,7 @@ const styles = {
       border: '2px solid white',
       backgroundColor: 'transparent',
       cursor: 'pointer',
-      marginBottom: '5rem'
+      marginBottom: '7.5rem'
    },
    textStyle: {
       display: 'flex',

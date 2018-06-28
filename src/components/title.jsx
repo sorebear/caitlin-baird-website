@@ -8,7 +8,7 @@ export default ({ children, style, className }) => (
 
 const styles = {
    titleStyle: {
-      padding: '5rem 0',
+      padding: '7.5rem 0 5rem 0',
       margin: 0,
       textTransform: 'uppercase',
       // color: 'rgb(179, 61, 120)'

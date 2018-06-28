@@ -13,7 +13,7 @@ export default ({ children, icon, title, style }) => (
 const styles = {
    cardStyle : {
       width: '320px',
-      marginBottom: '5rem',
+      marginBottom: '7.5rem',
       display: 'flex',
       flexDirection: 'column',
       textAlign: 'left',

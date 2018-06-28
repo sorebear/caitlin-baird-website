@@ -97,7 +97,7 @@ const content = {
 
 const styles = {
 	referencesStyle: {
-		marginBottom: '5rem',
+		marginBottom: '7.5rem',
 		display: 'flex',
 		alignItems: 'center',
 		flexDirection: 'column'

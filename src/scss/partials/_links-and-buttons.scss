@@ -41,3 +41,21 @@
 		// color: white !important;
 	}
 }
+
+.unstyled-button {
+	border: none;
+	outline: none;
+	background-color: inherit;
+	color: inherit;
+
+	&:hover {
+		background-color: inherit;
+		color: inherit;
+	}
+
+	&:acitve {
+		background-color: inherit;
+		border: none;
+		outline: none;
+	}
+}
