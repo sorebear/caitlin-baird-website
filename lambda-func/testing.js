@@ -1,4 +1,4 @@
-import beautify from 'js-beautify';
+var beautify = require('js-beautify');
 
 exports.handler = function(event, context, callback) {
   callback(null, {
