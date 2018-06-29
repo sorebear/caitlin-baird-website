@@ -2,7 +2,7 @@ import React from 'react';
 import ExpectationCard from '../components/expectationCard';
 
 export default () => (
-   <div className="what-to-expect" style={styles.whatToExpectStyles}>
+   <div className="what-to-expect text-on-white" style={styles.whatToExpectStyles}>
       <ExpectationCard icon="icon-basic-message-multiple" title="Communication">
          <p className="m-0">Quick and professional replies to phone calls and email messages</p>
       </ExpectationCard>

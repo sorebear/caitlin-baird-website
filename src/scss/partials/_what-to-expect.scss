@@ -1,15 +1,20 @@
-@media only screen and (max-width: 767px) {
-   .what-to-expect {
+.what-to-expect {
+  &__card {
+    i {
+      color: $primary-color;
+    }
+  }
 
-      &__card {
-         margin-left: auto !important;
-         margin-right: auto !important;
-         padding-left: 0 !important;
-         padding-right: 0 !important;
+  @media only screen and (max-width: 767px) {
+    &__card {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
 
-         &:last-child {
-            display: none !important;
-         }
+      &:last-child {
+        display: none !important;
       }
-   }
+    }
+  }
 }

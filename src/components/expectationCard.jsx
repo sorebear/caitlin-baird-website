@@ -3,8 +3,8 @@ import React from 'react';
 export default ({ children, icon, title, style }) => (
    <div className="what-to-expect__card" style={{...styles.cardStyle, ...style}}>
       <div style={styles.headerStyle}>
-         <i className={icon} style={styles.iconStyle}></i>
-         <h5>{ title }</h5>
+         <i className={`primary-color ${icon}`} style={styles.iconStyle}></i>
+         <h5 className="subtitle-on-white">{ title }</h5>
       </div>
       { children }
    </div>
@@ -13,7 +13,7 @@ export default ({ children, icon, title, style }) => (
 const styles = {
    cardStyle : {
       width: '320px',
-      marginBottom: '5rem',
+      marginBottom: '7.5rem',
       display: 'flex',
       flexDirection: 'column',
       textAlign: 'left',
@@ -28,10 +28,8 @@ const styles = {
    },
    iconStyle: {
       fontSize: '3rem',
-      // backgroundImage: 'linear-gradient(to bottom, rgb(97, 4, 95), rgb(50, 24, 95))',
       paddingBottom: '2px',
       backgroundSize: `cover`,
       WebkitBackgroundClip: 'text',
-      color: 'rgb(248,88,73)'
    }
 }
