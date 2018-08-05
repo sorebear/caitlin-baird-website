@@ -4,7 +4,7 @@ export default ({ type, value, className, children, style }) => (
    <button 
       type={type}
       value={value} 
-      className={className}
+      className={`${className} rem-7-5-bottom`}
       style={{...styles.buttonStyle, ...style}}>
       <h5 style={styles.textStyle} className="p-0 m-0">{ children }</h5>
    </button>

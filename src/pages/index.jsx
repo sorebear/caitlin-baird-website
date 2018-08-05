@@ -51,7 +51,7 @@ const IndexPage = () => (
 				backgroundImage: `${mainBgGradient}, url(${aboutMeImg})`
 			}}
 		>
-			<Title className="title-on-color" style={{ padding: '7.5rem 0 5rem 0' }}>About Me</Title>
+			<Title className="title-on-color rem-7-5" style={{ padding: '7.5rem 0 5rem 0' }}>About Me</Title>
 			<AboutMe />
 		</SectionWithBackground>
 		<section id="references" className="container">

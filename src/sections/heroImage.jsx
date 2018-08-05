@@ -46,7 +46,9 @@ const styles = {
 	},
 	subheaderStyle: {
 		padding: '0 1rem',
-		fontSize: '1.45rem',
-    textAlign: 'center'
+    fontSize: '1.45rem',
+    lineHeight: '2rem',
+    textAlign: 'center',
+    maxWidth: '800px',
 	}
 };

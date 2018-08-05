@@ -19,7 +19,7 @@ class AboutMe extends Component {
 
 	render() {
 		return (
-			<div className="about-me text-on-color" style={styles.aboutMeStyle}>
+			<div className="about-me text-on-color pb-10rem" style={styles.aboutMeStyle}>
 				<Modal showModal={this.state.showModal} className="modal">
 					<h5 className="modal__close" onClick={this.toggleModal} style={styles.closeModalStyle}>
 						&times;
@@ -58,13 +58,6 @@ class AboutMe extends Component {
 					words—where they came from, how they’re used, what they mean. passionate about
 					transformation and helping people experience the life they truly seek. re-losing the same
 					20 pounds I’ve lost 67 times before. and, learning to make peace with all of these things.
-				</p>
-				<p
-					onClick={this.toggleModal}
-					className="link-on-color mb-0"
-					style={{ cursor: 'pointer' }}
-				>
-					Looking for a prosessional bio? Click here.
 				</p>
 			</div>
 		);

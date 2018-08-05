@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () => (
-	<div className="text-on-white" style={{ padding: '7.5rem 0 7.5rem 0' }}>
+	<div className="text-on-white rem-7-5" style={{ padding: '7.5rem 0 7.5rem 0' }}>
 		<h2>We all want to live our best possible life</h2>
 		<p>
 			People envision healthy relationships, satisfying work and inner peace but often experience a

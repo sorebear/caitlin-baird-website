@@ -13,18 +13,16 @@
 	// }
 
 	@media only screen and (max-width: 767px) {
-		#my-work {
-			.services {
-				flex-direction: column !important;
-				align-items: center !important;
-				margin-bottom: 0 !important;
+    .services {
+      flex-direction: column !important;
+      align-items: center !important;
+      margin-bottom: 0 !important;
 
-				& > div {
-					width: 100% !important;
-					// text-align: center !important;
-					margin-bottom: 2.5rem;
-				}
-			}
-		}
-	}
+      & > div {
+        width: 100% !important;
+        // text-align: center !important;
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
 }
