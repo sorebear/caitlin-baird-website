@@ -7,7 +7,6 @@ class Footer extends Component {
 
 	handleSmoothScroll(anchor) {
 		const scrollDestination = document.getElementById(anchor);
-		console.log(scrollDestination);
 		smoothscroll(scrollDestination, 600);
 	}
 
